@@ -1,0 +1,67 @@
+.bg-beige {
+    background-color: #FFF7EC;
+}
+
+.bg-orange {
+    background-color: #E1625A;
+}
+
+.bg-darkgreen {
+    background-color: #002720;
+}
+
+.gallery_texte div {
+    background-color: #002720;
+    color: #FFF7EC;
+}
+
+/* PERMET DE FAIRE FONCTIONNER LE CHANGEMENT DE COULEUR DE BKGROUND DE LA NAVBAR LORSQUE L'UTILISATEUR HOVER */
+.navbar_menu a:hover {
+    background-color: #E1625A;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+/* CHANGE LE FOND DE LA DROPDOWN */
+.navbar_drop_down a {
+    background-color: #002720;
+}
+
+.grille>.bouton:hover {
+    background-color: #002720;
+}
+
+.bg-lightgreen {
+    background-color: #014D3F;
+}
+
+body {
+    background-color: #FFF7EC;
+}
+
+/* BACKGROUND COLOR DE LA NAVBAR */
+.navbar_couleur-bgn {
+    /* background-image: url("../images/forest.jpg");
+    background-size: cover; */
+    background-color: #002720;
+}
+
+hr {
+    border-color: #002720;
+}
+
+.gallery_texte_hero div {
+    /* background-color: #61876E; */
+
+    background-color: rgba(0, 39, 32, 50%);
+}
+
+/* RESPONSIVENESS DU HERO A 720PX */
+@media screen and (max-width: 720px) {
+
+    .gallery_texte_hero div {
+        /* background-color: #61876E; */
+        background-color: rgba(97, 135, 110, 0%);
+    }
+
+}

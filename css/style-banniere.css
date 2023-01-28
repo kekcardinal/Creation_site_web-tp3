@@ -1,0 +1,20 @@
+.banniere_balade>img {
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.banniere-img {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.banniere-items p {
+    padding: 20px;
+    font-size: 1.6em;
+}
+
+.banniere-items .bouton {
+    align-items: center;
+}

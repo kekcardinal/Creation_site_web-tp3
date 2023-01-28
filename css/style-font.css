@@ -1,0 +1,61 @@
+.font_texte_blanc {
+    color: #FFF7EC;
+    font-size: 25pt;
+}
+
+.font_carte_blanc {
+    color: #FFF7EC;
+}
+
+.font_texte_noir {
+    color: #002720;
+}
+
+.grille_flex_filtre a {
+    font-size: 25pt;
+}
+
+footer {
+    color: #FFF7EC;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 2em;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFF7EC;
+}
+
+.font_gros_texte {
+    font-size: 3em;
+    /* padding-bottom: 50px; */
+}
+
+.font_texte_aligner_centre {
+    text-align: center;
+}
+
+.font_footer_gros_texte {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 720px) {
+    .font_gros_texte {
+        font-size: 2em;
+    }
+
+    .font_footer_gros_texte {
+        font-size: 1.5em;
+        padding-top: 25px;
+    }
+
+}

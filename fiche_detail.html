@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+<!-- POUR CHAQUE CLASSE, LE PREMIER MOT EST DIRECTEMENT LE FICHIER CSS STYLE-MOT DANS LEQUEL LA CLASSE SE TROUVE -->
+<!-- LORSQUE OMIS, PAR EXEMPLE LA CLASSE CENTERED (QUI EST GLOBALE POUR PLUSIEURS PARTIS DU CSS) J'UTILISE LE FICHIER STYLE.CSS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travaux pratique 1">
+    <meta name="author" content="Felix Boutin-Cousineau">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar_menu">
+        <ul class="navbar_couleur-bgn" role="menu">
+
+            <!-- LOGO VEDGE A GAUCHE COMPLETEMENT DE LA NAVBAR -->
+            <li class="navbar_text_centrer navbar_logo font_texte_blanc">
+                <p>Z-V-J</p>
+            </li>
+
+            <li role="menuitem" aria-haspopup="false"><a href="index.html">Informations</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Activités et évenements</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Le monde du zoo</a></li>
+            <!-- DROPDOWN 1 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">Préserver la faune &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="fiche_detail.html">Anneta</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Parrainez un animal</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Programme éducatif</a></li>
+                    <li role="menuitem" aria-haspopup="false">
+                        <a class="navbar_dernier_dropdown" href="#">Nos
+                            initiatives</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="menuitem" aria-haspopup="true"><a href="#">Portail des animaux &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#ours">Ours noir</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#alpaga">Alpaga</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#lynx">Lynx</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#corbeau">Corbeau
+                            americain</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#castor">Castor canadien</a>
+                    </li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#caribou">Caribou</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#chevre">Chèvre de
+                            montagne</a></li>
+                    <li role="menuitem" aria-haspopup="false">
+                        <a class="navbar_dernier_dropdown" href="portail_animaux.html#harfang">Harfang des neiges</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar_division" role="menuitem" aria-haspopup="false"></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Billeterie</a></li>
+        </ul>
+    </nav>
+
+    <!-- FOOTER DE LA PAGE AVEC SOUS MENU + HEURES + LOCALISATIONS -->
+    <footer class="bg-darkgreen">
+        <div class="footer">
+            <div class="footer_1">
+                <h2 class="font_footer_gros_texte">INFORMATIONS</h2>
+                <ul>
+                    <li><a href="#">Services aux écoles</a></li>
+                    <li><a href="#">Partenaires</a></li>
+                    <li><a href="#">Informations générales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_2">
+                <h2 class="font_footer_gros_texte">DONS</h2>
+                <ul>
+                    <li><a href="#">Don ponctuel</a></li>
+                    <li><a href="#">Donc mensuel</a></li>
+                    <li><a href="#">Autres méthodes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h2 class="font_footer_gros_texte">Joignez-vous à nous</h2>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Carrières</a></li>
+                    <li><a href="#">Équipe</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h2 class="font_footer_gros_texte">Activités</h2>
+                <ul>
+                    <li><a href="#">Évènements</a></li>
+                    <li><a href="#">Famille</a></li>
+                </ul>
+            </div>
+            <div>
+            </div>
+            <div class="footer_droite">
+                <p>Billetterie</p>
+            </div>
+        </div>
+
+    </footer>
+</body>

@@ -1,0 +1,79 @@
+@import "style-navbar.css";
+@import "style-banniere.css";
+@import "style-bouton.css";
+@import "style-cartes.css";
+@import "style-grille.css";
+@import "style-font.css";
+@import "style-footer.css";
+@import "style-hero.css";
+@import "style-background-color.css";
+
+/* palette de couleur  */
+/* https://colorhunt.co/palette/3c625561876ea6bb8deae7b1 */
+
+/* ENLEVE LE MARGIN ET LE PADDING DE LA PAGE HTML PAR DEFAUT */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Helvetica", "Arial", "Verdana", sans-serif;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-weight: 100;
+}
+
+/* MET LE PADDING A DROITE ET A GAUCHE DU MAIN A 50PX */
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+/* TOUS LES ENFANTS DU MAIN ONT DROIT D'AVOIR 50PX DE MARGE EN BAS ET EN HAUT */
+main>* {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+section>h2 {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* h1 {
+    word-spacing: 2.5px;
+    top: 100%;
+    padding: 20px;
+} */
+
+/* LE STYLE DES HORIZONTAL RULES (LES POINTS QUI DIVISE CHACUNE DE MES SECTIONS) */
+hr {
+    margin: auto;
+    background-color: none;
+    border-style: none;
+    border-top-style: solid;
+    height: 0px;
+    border-width: 2px;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+
+    /* LE STYLE DES HORIZONTAL RULES (LES POINTS QUI DIVISE CHACUNE DE MES SECTIONS) */
+    hr {
+        border-width: 2px;
+        width: 100%;
+    }
+
+    /* MET LE PADDING A DROITE ET A GAUCHE DU MAIN A 50PX */
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+<!-- POUR CHAQUE CLASSE, LE PREMIER MOT EST DIRECTEMENT LE FICHIER CSS STYLE-MOT DANS LEQUEL LA CLASSE SE TROUVE -->
+<!-- LORSQUE OMIS, PAR EXEMPLE LA CLASSE CENTERED (QUI EST GLOBALE POUR PLUSIEURS PARTIS DU CSS) J'UTILISE LE FICHIER STYLE.CSS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travaux pratique 1">
+    <meta name="author" content="Felix Boutin-Cousineau">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar_menu">
+        <ul class="navbar_couleur-bgn" role="menu">
+
+            <!-- LOGO VEDGE A GAUCHE COMPLETEMENT DE LA NAVBAR -->
+            <li class="navbar_text_centrer navbar_logo font_texte_blanc">
+                <p>Z-V-J</p>
+            </li>
+
+            <li role="menuitem" aria-haspopup="false"><a href="index.html">Informations</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Activités et évenements</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Le monde du zoo</a></li>
+            <!-- DROPDOWN 1 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">Préserver la faune &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="fiche_detail.html">Anneta</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Parrainez un animal</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Programme éducatif</a></li>
+                    <li role="menuitem" aria-haspopup="false">
+                        <a class="navbar_dernier_dropdown" href="#">Nos
+                            initiatives</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="menuitem" aria-haspopup="true"><a href="#">Portail des animaux &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#ours">Ours noir</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#alpaga">Alpaga</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#lynx">Lynx</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#corbeau">Corbeau
+                            americain</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#castor">Castor canadien</a>
+                    </li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#caribou">Caribou</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="portail_animaux.html#chevre">Chèvre de
+                            montagne</a></li>
+                    <li role="menuitem" aria-haspopup="false">
+                        <a class="navbar_dernier_dropdown" href="portail_animaux.html#harfang">Harfang des neiges</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar_division" role="menuitem" aria-haspopup="false"></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Billeterie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="font_texte_noir font_gros_texte">
+            Nos animaux
+        </h1>
+        <hr>
+        <section class="grille_animaux">
+            <article id="ours" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/ours_noir.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Ours noir</h1>
+                    <p class="carte_texte ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, perspiciatis
+                        in et optio dolorum odit sed consequatur eum quis veritatis obcaecati delectus provident
+                        explicabo nesciunt. Sequi quisquam dolore libero culpa. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Vero temporibus fugit animi voluptas dolorem. Maxime obcaecati sed autem
+                        animi, asperiores laudantium. Harum, eligendi eius? Consectetur modi laudantium blanditiis eos
+                        repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla harum facilis ipsam
+                        autem ut nostrum dolor, sed eum quaerat ducimus provident incidunt deleniti porro error tempore,
+                        iste consequatur nesciunt quibusdam.</p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Ours_noir" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            l'ours</a>
+                    </section>
+                </section>
+            </article>
+            <article id="alpaga" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/alpaga.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">L'alpaga</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Alpaga" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            l'alpaga</a>
+                    </section>
+                </section>
+            </article>
+            <article id="lynx" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/lynx.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Le lynx</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://en.wikipedia.org/wiki/Lynx" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            le lynx</a>
+                    </section>
+                </section>
+            </article>
+
+            <article id="corbeau" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/corbeau.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Le corbeau</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Corbeau" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            le corbeau</a>
+                    </section>
+                </section>
+            </article>
+            <article id="castor" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/castor.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Le castor canadien</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Castor_du_Canada" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            le castor</a>
+                    </section>
+                </section>
+            </article>
+            <article id="caribou" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/caribou.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Le caribou boréal</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Caribou" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            le caribou</a>
+                    </section>
+                </section>
+            </article>
+            <article id="chevre" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/chevre.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">La chèvre de montagne</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Chèvre_des_montagnes_Rocheuses" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            la chèvre de montagne</a>
+                    </section>
+                </section>
+            </article>
+            <article id="harfang" class="carte bg-darkgreen font_carte_blanc">
+                <article class="carte_image_centrer">
+                    <img class="carte_image" src="images/cartes/harfang.jpg" alt="">
+                </article>
+                <section class="carte_section_texte">
+                    <h1 class="font_gros_texte font_texte_aligner_centre">Le harfang des neiges</h1>
+                    <p class="carte_texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis ipsam, molestiae a quos
+                        consequuntur expedita vel officiis perferendis tempora eaque! Aliquam totam dolores nihil aut
+                        nisi maxime iusto ullam?
+                    </p>
+                    <section class="carte_bouton_centrer">
+                        <a href="https://fr.wikipedia.org/wiki/Harfang_des_neiges" target="_blank"
+                            class="bouton bg-orange carte_bouton_centrer">En
+                            apprendre plus sur
+                            le harfang</a>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <hr>
+        <h1 class="font_texte_noir font_gros_texte">
+            Filtrer par animal
+        </h1>
+        <section class="grille_flex_filtre">
+            <a href="#" class="bouton bg-orange carte_bouton_centrer">Amphibien</a>
+            <a href="#" class="bouton bg-orange carte_bouton_centrer">Oiseau</a>
+            <a href="#" class="bouton bg-orange carte_bouton_centrer">Canin</a>
+            <a href="#" class="bouton bg-orange carte_bouton_centrer">Félin</a>
+            <a href="#" class="bouton bg-orange carte_bouton_centrer">Mustélidé</a>
+        </section>
+
+        <hr>
+
+        <h1 class="font_texte_noir font_gros_texte">
+            Découvrez les animaux accèssibles lors de la balade!
+        </h1>
+        <section class="banniere_balade">
+            <img src="images/forest_balade.jpg" alt="">
+        </section>
+
+        <hr>
+        <h1 class="font_texte_noir font_gros_texte">
+            Parrainez un cougar #Retrouver sa liberté
+        </h1>
+
+        <a href="#" class="bouton bg-orange carte_bouton_centrer">Voir nos modèles de parrainage</a>
+
+        <hr>
+    </main>
+    <!-- FOOTER DE LA PAGE AVEC SOUS MENU + HEURES + LOCALISATIONS -->
+    <footer class="bg-darkgreen">
+        <div class="footer">
+            <div class="footer_1">
+                <h2 class="font_footer_gros_texte">INFORMATIONS</h2>
+                <ul>
+                    <li><a href="#">Services aux écoles</a></li>
+                    <li><a href="#">Partenaires</a></li>
+                    <li><a href="#">Informations générales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_2">
+                <h2 class="font_footer_gros_texte">DONS</h2>
+                <ul>
+                    <li><a href="#">Don ponctuel</a></li>
+                    <li><a href="#">Donc mensuel</a></li>
+                    <li><a href="#">Autres méthodes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h2 class="font_footer_gros_texte">Joignez-vous à nous</h2>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Carrières</a></li>
+                    <li><a href="#">Équipe</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h2 class="font_footer_gros_texte">Activités</h2>
+                <ul>
+                    <li><a href="#">Évènements</a></li>
+                    <li><a href="#">Famille</a></li>
+                </ul>
+            </div>
+            <div>
+            </div>
+            <div class="footer_droite">
+                <p>Billetterie</p>
+            </div>
+        </div>
+
+    </footer>
+</body>

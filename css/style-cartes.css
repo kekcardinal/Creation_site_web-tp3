@@ -1,0 +1,75 @@
+/* CREATION DU GRID AVEC 350PX PAR CONTENEUR */
+.gallery_image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+/* SETTINGS POUR LES IMAGES DANS LE GRID */
+.gallery_image article img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    vertical-align: middle;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* LES ENFANTS DE GALLERY D'IMAGE DOIVENT AVOIR LA POSITION RELATIVE (LE TEXTE) ET LA CLASS GALLERY_TEXTE QUI EST UTILISÉ À PLUSIEURS PLACE*/
+.gallery_image>*,
+.gallery_texte,
+.gallery_texte_hero {
+    position: relative;
+    text-align: center;
+}
+
+.gallery_texte_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 77vh;
+}
+
+/* article h1 {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+} */
+
+.carte_texte {
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 20px;
+}
+
+.carte_bouton_centrer,
+.carte_image_centrer {
+    text-align: center;
+}
+
+.carte_bouton_centrer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.carte_image {
+    padding: 20px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .gallery_image {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+    }
+
+    .carte {
+        flex-direction: column;
+    }
+
+}
